@@ -1,26 +1,48 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+// External Components
+import {
+  IntroSection,
+  ProjectsSection,
+  ResumesSection,
+  AboutContactSection
+} from "./components/Sections";
+import SocialList from "./components/SocialList";
+// Bootstrap Components
+import { Container, Row, Col } from "react-bootstrap";
+// CSS, Styling
+import StyleSheet from "./StyleSheet.json";
+import "./App.css";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Container fluid>
+        <Row>
+          <Col
+            style={{ ...StyleSheet.sizeFullScreen }}
+            md={1}
+            className="p-0 bg-light text-center slide-in-left"
+          >
+            <SocialList />
+          </Col>
+          <Col
+            style={{
+              ...StyleSheet.sizeFullScreen,
+              overflowX: "hidden",
+              scrollSnapType: "y mandatory"
+            }}
+            md={11}
+            className="p-0 slide-in-right"
+          >
+            <IntroSection />
+            <ProjectsSection />
+            <ResumesSection />
+            <AboutContactSection />
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
-}
+};
 
 export default App;

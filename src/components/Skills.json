@@ -1,0 +1,41 @@
+{
+  "languages": ["Swift", "Javascript", "Python", "C#", "Java"],
+  "web": {
+    "frontEnd": [
+      "HTML5",
+      "CSS3",
+      "Bootstrap",
+      "jQuery",
+      "AJAX",
+      "LESS",
+      "React.js"
+    ],
+    "backEnd": ["Django", "Express.js", "Node.js"]
+  },
+  "ios": {
+    "mics": ["Auto Layout", "Grand Central Dispatch (GCD or libdispatch)"],
+    "frameworks": [
+      "UIKit",
+      "SwiftUI",
+      "Core ML",
+      "Vision",
+      "Core Location",
+      "Core Animation",
+      "MapKit"
+    ],
+    "databases": ["Core Data"]
+  },
+  "databases": [
+    "SQLite",
+    "MySQL",
+    "MongoDB",
+    "Firebase (Realtime Database & Cloud Firestore)"
+  ],
+  "deployment": [
+    "AWS EC2",
+    "App Store (through App Store Connect & Xcode)",
+    "Firebase Hosting"
+  ],
+  "versionControl": ["Git"],
+  "others": ["Visual Studio Code", "Xcode", "GitHub (used with Git)"]
+}
